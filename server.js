@@ -26,27 +26,25 @@ app.use(passport.session());
 // app.use(app.express.static(__dirname + '/public'));
 app.use(express.static(__dirname + '/public'));
 
-var connectionString = 'mongodb://127.0.0.1:27017/webdev_summer1_2017'; // for local
+var connectionString = 'mongodb://127.0.0.1:27017/cs3200_project'; // for local
 if(process.env.MLAB_USERNAME_WEBDEV) { // check if running remotely
     var username = process.env.MLAB_USERNAME_WEBDEV; // get from environment
     var password = process.env.MLAB_PASSWORD_WEBDEV;
     connectionString = 'mongodb://' + username + ':' + password;
-    connectionString += '@ds031601.mlab.com:31601/heroku_lk22crx9'; // user yours
+    connectionString += '@ds135912.mlab.com:35912/heroku_6f8zz41j'; // user yours
 }
 
 var mongoose = require("mongoose");
 mongoose.connect(connectionString);
 
 require ("./test/app.js")(app, mongoose);
-// require ("./assignment/app.js")(app, mongoose);
 
 
 // require ("./test/app.js")(app);
 
-// require('./assignment/app');
 
 require('./project/app.js')(app, mongoose);
 
-var port = process.env.PORT || 3000;
+var port = process.env.PORT || 4000;
 
 app.listen(port);
