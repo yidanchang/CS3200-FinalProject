@@ -1,35 +1,27 @@
-# web-dev-template
+Introduction:
 
-1. git clone https://github.com/jannunzi/web-dev-template.git
-1. cd web-dev-template
-1. npm install
-1. mongod
-1. node server.js
-1. browse to localhost:3000
+This is a website application that users (employers) can post their job postings on it, and they could search for postings by keywords (job title or position). A user can find all related information of the postings, and they could get details on right hand side by clicking the search result list. Moreover, in the bottom of the detail side, it will show the user who posted this posting, and he could click the user link by viewing that user’s more posting list and posting details, but if the user who posted this posting has been unregistered, there will a notice that said “the user who posted this posting has been unregistered”. Also, a user could search username in keyword and they will get a list of users related to the keyword. A user could follow the users who he has not followed yet by clicking the empty star, at the same time, he could unfollow the user who he has followed already by clicking the full star. He could find his followings and followers by clicking the nav-bar.
 
+Heroku Environment Website Application:
+http://yidanchang-cs3200-finalproject.herokuapp.com/project/index.html#!/indeedSearch
 
-
+Github of the complete code:
+https://github.com/yidanchang/CS3200-FinalProject
 
 
-My name is Yidan Chang, an undergraduate student at Northeastern University, majoring in Computer Science with Minor in Math.
-I'm interested in playing the piano and guitar. Also, I really like dancing, such as Chinese dance and ballroom dancing.
-
-Though I'm an undergraduate, I still choose to take the graduate web course for challenging myself.,
-I have learned Java, DrRacket, C++ programming, and I have done some class projects in the following:
-1) Tetris (DrRacket)
-2) Forbiddent Island (Java)
-3) Maze (Java)
-4) Free Cell (Java)
-5) Music Editor (Java)
-
-webdev : This repository is used to web development class, for designing web applicaiton and so on.
-
-Links:
-1. Hosted environment on Heroku : https://yidanchang-webdev-summer2017.herokuapp.com/
-2. Link to project : https://yidanchang-webdev-summer2017.herokuapp.com/project/index.html
-3. Link to assignment : https://yidanchang-webdev-summer2017.herokuapp.com/assignment/index.html
+Preparation:
+1.	The MongoDB
+2.	WebStorm or your favorite IDE for web
 
 
+Run Program:
+Make sure you open mongod locally.
+On terminal, install libraries for package: “npm install”
+Add configuration for running (node.js).
+You can run by “localhost:4000” and choose “project” to open the project home page.
+
+For Database:
+You can find local terminal to get the mongo database (my database name is “cs3200_project”) and the collections named “project.user” and “project.posting”.
 
 
 
