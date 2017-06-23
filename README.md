@@ -18,7 +18,7 @@ Run Program:
 Make sure you open mongod locally.
 On terminal, install libraries for package: “npm install”
 Add configuration for running (node.js).
-You can run by “localhost:4000” and choose “project” to open the project home page.
+You can run by “localhost:5000” and choose “project” to open the project home page.
 
 For Database:
 You can find local terminal to get the mongo database (my database name is “cs3200_project”) and the collections named “project.user” and “project.posting”.
