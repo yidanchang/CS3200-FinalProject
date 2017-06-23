@@ -1,6 +1,5 @@
 
 <nav class="navbar navbar-inverse navbar-fixed-top">
-    <!--<div class="container">-->
     <div class="navbar-header">
         <a class="navbar-brand pull-left active" ng-if="model.myPosts" href="#!/posting"><span class="fa fa-file-text"></span> My Postings</a>
         <a class="navbar-brand pull-left active" ng-if="!model.myPosts" href="#!/user/{{model.userId}}/posting"><span class="fa fa-file-text"></span> Postings</a>
@@ -14,9 +13,6 @@
         </button>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <!--<li><a href="#!/admin">Admin</a></li>-->
-                <!--<li class="active"><a href="#!/">Home</a></li>-->
-                <!--<li><a href="#!/admin">Admin</a></li>-->
                 <li><a href="#!/profile"><span class="fa fa-user"></span>Profile</a></li>
                 <li ng-if="!model.myPosts"><a href="#!/posting"><span class="fa fa-file-text"></span> My Postings</a></li>
                 <li><a href="#!/search/posting"><span class="fa fa-search"></span> Search Posting</a></li>

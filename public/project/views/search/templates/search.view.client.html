@@ -1,5 +1,4 @@
 <nav class="navbar navbar-inverse navbar-fixed-top">
-    <!--<div class="container">-->
     <div class="navbar-header">
         <a class="navbar-brand pull-left active" href="#!/search"><span class="fa fa-search"></span> Search Posting</a>
 
@@ -11,8 +10,6 @@
         </button>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <!--<li class="active"><a href="#!/">Home</a></li>-->
-                <!--<li><a href="#!/admin">Admin</a></li>-->
                 <li ng-show="!model.currentUser._id"><a href="#!/login"><span class="fa fa-sign-in"></span> Login</a></li>
                 <li ng-show="!model.currentUser._id"><a href="#!/register"><span class="fa fa-sign-in"></span> Register</a></li>
                 <li><a href="#!/indeedSearch"><span class="fa fa-info-circle"></span> Search by Indeed</a></li>
@@ -27,26 +24,9 @@
         </div><!--/.nav-collapse -->
 
     </div>
-    <!--</div>-->
 </nav>
-<!--<nav class="navbar navbar-default navbar-fixed-top">-->
-    <!--<div class="container-fluid">-->
-        <!--<div class="navbar-header">-->
-            <!--<p class="navbar-text pull-left">-->
-                <!--<a href="#!/profile" class="navbar-link">-->
-                    <!--<span class="glyphicon glyphicon-arrow-left"></span>-->
-                <!--</a>-->
-            <!--</p>-->
-            <!--<a class="navbar-brand" href="#">-->
-                <!--Search Job Posting-->
-            <!--</a>-->
-        <!--</div>-->
-    <!--</div>-->
-<!--</nav>-->
 
 <div class="container-fluid">
-
-    <!--{{model.jobs}}-->
     <div class="input-group">
         <input ng-model="model.keyword"
                type="text"

@@ -14,17 +14,6 @@
         model.unfollow = unfollow;
         model.logout = logout;
 
-        // var following = {
-        //
-        // };
-
-        // function init() {
-        //     for(var u in currentUser.following) {
-        //         following.push(currentUser.following[u]);
-        //     }
-        // }
-        // init();
-
         function logout() {
             employerService
                 .logout()
@@ -34,7 +23,6 @@
         }
 
         function amIfollowing(otherUserId) {
-            // return typeof following != "undefined";
             return currentUser.followings.indexOf(otherUserId) > -1;
         }
 

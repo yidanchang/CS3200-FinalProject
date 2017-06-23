@@ -3,7 +3,7 @@
         .module('JobApp')
         .controller('followersController', followersController);
 
-    function followersController($routeParams, $location, currentUser, employerService) {
+    function followersController($location, currentUser, employerService) {
         var model = this;
 
         model.userId = currentUser._id;

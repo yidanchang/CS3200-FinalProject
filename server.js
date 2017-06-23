@@ -1,6 +1,5 @@
 var express = require('express');
 var app = express();
-// var app = require('./express');
 
 var bodyParser = require('body-parser');
 var cookieParser = require('cookie-parser');
@@ -11,7 +10,6 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(cookieParser());
-// app.use(session({ secret: "this is secret!"}));
 app.use(session({
     secret: "this is the secret",
     resave: true,
@@ -23,7 +21,6 @@ app.use(passport.session());
 
 
 // configure a public directory to host static content
-// app.use(app.express.static(__dirname + '/public'));
 app.use(express.static(__dirname + '/public'));
 
 var connectionString = 'mongodb://127.0.0.1:27017/cs3200_project'; // for local

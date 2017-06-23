@@ -10,7 +10,6 @@
                                    postingService) {
         var model = this;
 
-        // model.userId = $routeParams['userId'];
         model.userId = currentUser._id;
         model.postingId = $routeParams.postingId;
         model.deletePosting = deletePosting;

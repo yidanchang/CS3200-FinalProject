@@ -3,13 +3,11 @@
         .module("JobApp")
         .controller("searchController", searchController);
 
-    function searchController($routeParams, postingService, employerService) {
+    function searchController(postingService, employerService) {
         var model = this;
 
-        // model.userId = $routeParams['userId'];
         model.myPosts = false;
 
-        // model.userId = currentUser._id;
         model.searchByName = searchByName;
         model.findPostingById = findPostingById;
 
